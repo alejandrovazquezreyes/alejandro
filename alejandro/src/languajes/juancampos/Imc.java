@@ -13,6 +13,12 @@ public class Imc {
     float peso;
     float altura;
     
+    public Imc(float p, float a){
+        
+        peso=p;
+        altura=a;
+        
+    }
     public Imc(){
         peso=78f;
         altura=1.68f;
@@ -40,6 +46,12 @@ public class Imc {
     public float calcular(){
         float resultadoImc=peso/(altura*altura);
         return resultadoImc;
-    }
+        
+            
+        if(resultadoImc<20);
+        System.out.println("Eres anorexico te moririas");
+        
+        
+    
     
 }
